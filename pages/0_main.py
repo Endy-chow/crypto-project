@@ -89,7 +89,8 @@ with st.container():
     st.markdown(f"<h5 style='text-align: center; margin-top: 30px;color:#4284CC; font-size: 10px; font-family: Open Sans Bold, sans-serif'> </h5>", unsafe_allow_html=True)
 
 col_b1, col_b2 = st.columns([1,1])
-with col_b1:
+    #Column background color
+    st.markdown(f"<style> div[data-testid="column"]{background-color: #ffffff; opacity: 0.95; padding: 20% 20% 20% 20%; border-radius: 10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px}</style>", unsafe_allow_html=True)
     #Column Title
     st.image("https://static.wixstatic.com/media/63fd61_6dfc87ea0cd94e539e91a960df3c8366~mv2.png")
     # st.markdown(f"<h5 style='text-align: left; margin-top: 16px;color:#4284CC; font-size: 30px; font-family: Open Sans Bold, sans-serif'> 💬 </h5>", unsafe_allow_html=True)
