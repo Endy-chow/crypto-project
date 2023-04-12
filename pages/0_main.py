@@ -89,6 +89,7 @@ with st.container():
     st.markdown(f"<h5 style='text-align: center; margin-top: 30px;color:#4284CC; font-size: 10px; font-family: Open Sans Bold, sans-serif'> </h5>", unsafe_allow_html=True)
 
 col_b1, col_b2 = st.columns([1,1])
+with col_b1:    
     #Column Title
     st.image("https://static.wixstatic.com/media/63fd61_6dfc87ea0cd94e539e91a960df3c8366~mv2.png")
     # st.markdown(f"<h5 style='text-align: left; margin-top: 16px;color:#4284CC; font-size: 30px; font-family: Open Sans Bold, sans-serif'> 💬 </h5>", unsafe_allow_html=True)
@@ -101,7 +102,6 @@ col_b1, col_b2 = st.columns([1,1])
     #     st.image("https://static.wixstatic.com/media/63fd61_f32341a3d588440fb1bd2b2ff692e29e~mv2.png")
     # else:
     #     st.image("https://static.wixstatic.com/media/63fd61_2f1ddec84fd2427f86035f8ad0d54325~mv2.png")
-
 
     if st.button("Read More"):
         switch_page("sentiment")
